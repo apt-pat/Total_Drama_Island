@@ -1,0 +1,108 @@
+:root {
+    --background-color: #F5F5F5;
+    --primary-color: #FF6F61;
+    --secondary-color: #00C2CB;
+    --text-color: #222222;
+    --support-color: #FFC857;
+    --highlight-color: #6A4C93;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    background-color: var(--primary-color);
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+
+/* Estilo padrão: para telas grandes */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu padrão: horizontal */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+/* Responsividade: telas menores */
+@media (max-width: 768px) {
+    /* Ajuste do body */
+    body {
+        font-size: 16px; /* Texto menor */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Menu vertical */
+    nav ul {
+        flex-direction: column; /* Deixa o menu vertical */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Espaço entre os itens */
+    }
+
+    /* Texto de boas-vindas centralizado */
+    main h1 {
+        font-size: 24px; /* Diminui o tamanho do título */
+    }
+
+    main p {
+        font-size: 14px; /* Texto menor */
+    }
+}
+
+
+.pagina-inscricao {
+    background-color: #34a853;
+}
+
+.pagina-inscricao h1{
+    color: #5f6368;
+    text-align: center;
+}
+
+.team-image {
+    flex: 1; /* Permite que a imagem ocupe parte proporcional */
+    height: 300px; /* Define altura fixa */
+    width: 100%; /* Garante que ocupe toda a largura do contêiner pai */
+    object-fit: cover; /* Redimensiona a imagem sem distorcer */
+    border-right: 1px solid #ddd; /* Separador opcional */
+    display: block; /* Remove margens desnecessárias ao redor da imagem */
+}

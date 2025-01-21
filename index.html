@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            margin: 40px 0; /* Aumentando a margem superior */
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+        .images-container {
+            display: flex;
+            gap: 20px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .large-box {
+            flex: 2;
+            height: 300px;
+            background-color: #ddd;
+            border: 2px solid #ccc;
+            background-size: cover;
+            background-position: center;
+            background-image: url('URL_DA_IMAGEM_LARGE');
+        }
+        .right-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+        .small-box {
+            height: 140px;
+            background-color: #ddd;
+            border: 2px solid #ccc;
+            background-size: cover;
+            background-position: center;
+        }
+        .small-box:nth-child(1) {
+            background-image: url('URL_DA_IMAGEM_SMALL_1');
+        }
+        .small-box:nth-child(2) {
+            background-image: url('URL_DA_IMAGEM_SMALL_2');
+        }
+        .main-text {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .main-text h2 {
+            font-size: 1.8rem;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+        .links a {
+            font-size: 1.2rem;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .details {
+            width: 80%;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="images-container">
+        <div class="large-box"></div>
+        <div class="right-boxes">
+            <div class="small-box"></div>
+            <div class="small-box"></div>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>INSCRIÇÕES ABERTAS PARA O REALITY!</h1>
+    </div>
+
+    <div class="links">
+        <a href="equipes.html">Equipes</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="regras.html">Regras</a>
+    </div>
+
+    <div class="details">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod, est sit amet ultricies scelerisque, justo lorem sollicitudin arcu, sit amet volutpat lorem lectus at nulla.</p>
+        <p>Detalhes adicionais podem ser adicionados aqui para explicar mais sobre o processo de inscrição ou informações relevantes.</p>
+    </div>
+</body>
+</html>
